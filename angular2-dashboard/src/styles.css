@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+.navbarbg {
+    background-color: #1976D2;
+    border-color: #1976D2;
+}
+
+.bluebtn{
+        background: #1976d2 !important;
+    color: white !important;
+}
+.cdk-overlay-container {
+    position: fixed;
+    z-index: 999999999999 !important;
+}
+.linkcss{
+    color: #fff;
+}
+.mat-fab.mat-accent, .mat-mini-fab.mat-accent, .mat-raised-button.mat-accent {
+    background-color: #1976d2 !important;
+}
+.page-header {
+   font-size: 24px;
+}
