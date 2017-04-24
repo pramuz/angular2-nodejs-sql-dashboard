@@ -33,3 +33,31 @@ Basic Dashboard feature list:
   ```
 * ### Step 2
  configuration setup nodeJS
+ ```
+ cd setup-nodejs-server-with-sql-database
+ ```
+  ```
+       Edit in Server.js
+       var connection = mysql.createConnection({
+           host: '<host>',
+           user: '<user>',
+           password: '<password>',
+           database: '<DB Name>'
+       });
+       if you want to change port
+
+       app.listen(<port number>);
+       Example :   app.listen(4442);
+       ```
+        ```
+        Install package.json dependencies
+setup-nodejs-server-with-sql-database> npm install
+         ```
+           ```
+                 Run Node Server
+         setup-nodejs-server-with-sql-database>Node Server
+
+         Go to url:
+
+         http://localhost:4442/app
+                  ```
