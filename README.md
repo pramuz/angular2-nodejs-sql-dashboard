@@ -76,7 +76,7 @@ angular2-dashboard>npm install
 angular2-dashboard>ng server
 
 ```
-Open chrome
+###Open chrome
 [http://localhost:4444](http://localhost:4444) 
 
 ```
