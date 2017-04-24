@@ -48,7 +48,7 @@ Basic Dashboard feature list:
 
        app.listen(<port number>);
        Example :   app.listen(4442);
-       ```
+
         ```
         Install package.json dependencies
 setup-nodejs-server-with-sql-database> npm install
