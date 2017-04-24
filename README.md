@@ -37,3 +37,13 @@ Basic Dashboard feature list:
     PRIMARY KEY (`PersonID`)
   ) ENGINE=InnoDB AUTO_INCREMENT=114 DEFAULT CHARSET=utf8;
   ```
+  * ### Step 2
+ configuration setup nodeJS
+ 
+ ```
+ cd setup-nodejs-server-with-sql-database
+ ```
+```
+Install package.json dependencies
+setup-nodejs-server-with-sql-database> npm install
+```
