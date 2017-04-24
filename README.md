@@ -7,3 +7,15 @@ Dashboard :
 Create Contact Details :
 
 ![Alt text](image/create_page.PNG?raw=true "Optional Title")
+
+Basic Dashboard feature list:
+
+ * Angular Material Design
+ * Bootstrap3
+ * D3 Visualization
+ * Font Awesome
+ * Teradata UI Platform
+
+ ## Usage
+
+  * ### Step 1
