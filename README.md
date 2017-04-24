@@ -6,4 +6,4 @@ Dashboard :
 
 Create Contact Details :
 
-![Alt text](image/ceate_page.PNG?raw=true "Optional Title")
+![Alt text](image/create_page.PNG?raw=true "Optional Title")
