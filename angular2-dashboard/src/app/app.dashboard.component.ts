@@ -8,24 +8,24 @@ declare var d3: any;
   selector: 'my-dashboard',
    templateUrl: './dashboard.Component.html',
    providers:[HttpService]
-   
+
 })
 export class DashboardComponent  {
-  
+
  private data:any[] = [];
- 
+
     public filterQuery = "";
     public rowsOnPage = 6;
     public sortBy = "FirstName";
     public sortOrder = "asc";
-  
+
   dataTable: any[] = [];
   postdata: string;
   selectedOption: string;
 
   constructor(public dialog: MdDialog,private _httpService:HttpService,private viewContainerRef:ViewContainerRef) {
     this.onGetData()
-   
+
   }
   public toInt(num: string) {
         return +num;
@@ -50,9 +50,9 @@ export class DashboardComponent  {
                 error => alert(error)
             );
     }
-    
+
   ngOnInit() {
-  
+
    this.openchart();
     }
     openchart(){
@@ -60,7 +60,7 @@ export class DashboardComponent  {
        var w = 600;
 var h = 250;
 
-var dataset = [ 
+var dataset = [
 	{ key: 0, value: 5 },
 	{ key: 1, value: 10 },
 	{ key: 2, value: 13 },
@@ -84,7 +84,7 @@ var dataset = [
 
 var xScale = d3.scale.ordinal()
 				.domain(d3.range(dataset.length))
-				.rangeRoundBands([0, w], 0.05); 
+				.rangeRoundBands([0, w], 0.05);
 
 var yScale = d3.scale.linear()
 				.domain([0, d3.max(dataset, function(d) {return d.value;})])
@@ -134,14 +134,14 @@ svg.selectAll("text")
    .attr("y", function(d) {
 		return h - yScale(d.value) + 14;
    })
-   .attr("font-family", "sans-serif") 
+   .attr("font-family", "sans-serif")
    .attr("font-size", "11px")
    .attr("fill", "white");
-   
+
 var sortOrder = false;
 var sortBars = function () {
     sortOrder = !sortOrder;
-    
+
    var sortItems = function (a, b) {
         if (sortOrder) {
             return a.value - b.value;
@@ -185,7 +185,7 @@ var sortBars = function () {
     remove(datadel:any){
         this._httpService.getDataDel(datadel.PersonID).subscribe(
                 data => {
-                  
+
                   if(data.status===true){
                     this.onGetData()
                   }
@@ -199,7 +199,7 @@ var sortBars = function () {
                 error => alert(error)
           );
     }
-    
+
 }
 
 
@@ -247,7 +247,7 @@ var sortBars = function () {
         <div class="col-md-7 form-group">
           <input type="text"[(ngModel)]="tableData.City" name="City" #City="ngModel" required maxlength="10">
             <div *ngIf="City.errors && City.touched" class="error">
-                <span [hidden]="!City.errors.required">Address is required. </span>
+                <span [hidden]="!City.errors.required">City is required. </span>
                 <span [hidden]="!City.errors.maxlength">Max length is 10 character.</span>
             </div>
         </div>
@@ -297,7 +297,7 @@ export class DialogComponent {
    submitForm(form: any): void{
     console.log('Form Data: ');
     console.log(form);
-   
+
   this.dashboardComponent.onPostData(form)
 }
 
