@@ -67,3 +67,28 @@ Run Node Server
 
 setup-nodejs-server-with-sql-database>Node Server
 ```
+### Open chrome:
+[http://localhost:4442/app](http://localhost:4442/app)
+
+* ### Step 3
+```
+angular2-dashboard>npm install
+angular2-dashboard>ng server
+
+```
+Open chrome
+[http://localhost:4444](http://localhost:4444) 
+
+```
+if you want to change port of application
+
+Edit .angular-cli.json
+"defaults": {
+    "styleExt": "css",
+    "component": {},
+     "serve": {
+      "port": <port number>
+    }
+  }
+```
+
