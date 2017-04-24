@@ -6,8 +6,8 @@ var app = express();
 var connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'praveen',
-    database: 'webpackcli'
+    password: '',
+    database: ''
 });
 //End Database Configuration 
 connection.connect(function(error){
