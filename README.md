@@ -47,3 +47,19 @@ Basic Dashboard feature list:
 Install package.json dependencies
 setup-nodejs-server-with-sql-database> npm install
 ```
+```
+Change Database Details:
+ Edit in Server.js
+var connection = mysql.createConnection({
+           host: '<host>',
+           user: '<user>',
+           password: '<password>',
+           database: '<DB Name>'
+});
+```
+if you want to change port
+
+app.listen(<portnumber>);
+Example :   app.listen(4442);
+
+```
