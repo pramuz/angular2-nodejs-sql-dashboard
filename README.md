@@ -32,4 +32,4 @@ Basic Dashboard feature list:
 
   ```
 * ### Step 2
- confiquation
+ configuration setup nodeJS
